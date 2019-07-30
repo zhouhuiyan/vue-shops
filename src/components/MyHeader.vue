@@ -4,7 +4,7 @@
     <p v-html="msg">111</p>
     <p v-text="msg"></p>
     <p>{{ num + 1}}</p>
-    <p v-for="item in list" :key="item.price">
+    <p v-for="item in list" :key="item.price" @click="doclick(item)">
       商品{{item.name}} -----价格 {{item.price}}
     </p>
     <p v-for="(item,index) in list" :key="index" v-text="'商品'+item.name+' -----价格 '+item.price"></p>
@@ -42,9 +42,13 @@ export default {
  },
  methods:{
    keydown(){
-     console.log('keydown enter');
+    //  console.log('keydown enter');
+      console.log('sdsds');
+   },
+   doclick(data){
+     this.$router.push({name:'coma',params:data})
    }
- }
+ },
 }
 </script>
 

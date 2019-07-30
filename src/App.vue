@@ -1,19 +1,18 @@
 <template>
-  <div id="app">
+  <div id="app">222222222222
     <!-- <my-header/> -->
-    <com></com>
+    <!-- <com></com> -->
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import myHeader from './components/MyHeader.vue';
-import com from './views/test/views/com.vue';
+
 
 export default {
   name: 'app',
   components: {
-    myHeader,
-    com
+
   }
 }
 </script>

@@ -6,7 +6,9 @@
 
 <script>
 export default {
-    
+    created(){
+        console.log("royer:",this.$route.params)
+    }
 }
 </script>
 
